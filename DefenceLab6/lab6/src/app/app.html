@@ -1,0 +1,16 @@
+<header class="site-header">
+  <nav class="nav">
+    <a
+      routerLink="/home"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Home
+    </a>
+    <a routerLink="/users" routerLinkActive="active">Users</a>
+  </nav>
+</header>
+
+<main class="site-main">
+  <router-outlet />
+</main>

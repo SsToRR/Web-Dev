@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: rgb(41, 99, 116);
+            font-family: Arial;
+        }
+        #header {
+            width: 100%;
+            text-align: center;
+            background-color:rgb(12, 44, 85);
+            color: rgb(237, 237, 206);
+            padding: 20px;
+        }
+        #footer {
+            width: 100%;
+            text-align: center;
+            background-color:rgb(12, 44, 85);
+            color: rgb(237, 237, 206);
+            padding: 20px;
+        }
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            background-color: rgb(12, 44, 85);
+            color: rgb(237, 237, 206);
+            width: 100%;
+        }
+
+        ul li {
+            width: 25%;
+            display: inline-block;
+            float: left;
+        }
+
+        ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            background-color: rgb(98, 159, 173);
+            transition: 0.3s ease-in;
+        }
+        h2 {
+            text-align: center;
+            color: rgb(237, 237, 206);
+        }
+        p {
+            text-align: center;
+            color: rgb(237, 237, 206);
+        }
+        #aboutme{
+            justify-content: center;
+            text-align: center;
+            background-color:  rgb(98, 159, 173);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 10px;
+        }
+        #skills{
+            justify-content: center;
+            text-align: center;
+            background-color:  rgb(98, 159, 173);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 10px;
+        }
+        #contact {
+            justify-content: center;
+            text-align: center;
+            background-color:  rgb(98, 159, 173);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 10px;
+        }
+        .skill-box{
+            width: 30%;
+            display: inline-block;
+            border: 1px solid white;
+            padding: 10px;
+            margin: 10px;
+            background-color: purple;
+            border-radius: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 id="header">My name is Miras. <br> I'm an aspiring backend developer</h1>
+    <ul class = "navbar">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">My Skills</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+    </ul>
+    <div id="aboutme">
+        <h2>About Me</h2>
+        <p>My name is Miras. I'm from Oskemen. I am currently studying at KBTU</p>
+    </div>
+    <div id="skills">
+        <h2>My Skills</h2>
+        <div class="skill-box">
+            <h4>HTML</h4>
+        </div>
+        <div class="skill-box">
+            <h4>CSS</h4>
+        </div>
+        <div class="skill-box">
+            <h4>JavaScript</h4>
+        </div>
+        <p>My name is Miras. I'm from Oskemen. I am currently studying at KBTU</p>
+    </div>
+    <div id="contact">
+        <h2>Contact Me</h2>
+        <p>My name is Miras. I'm from Oskemen. I am currently studying at KBTU</p>
+    </div>
+
+</body>
+<footer id="footer">
+    <p>(C) 2026 Miras Ibrayev. All rights reserved.</p>
+</footer>
+</html>

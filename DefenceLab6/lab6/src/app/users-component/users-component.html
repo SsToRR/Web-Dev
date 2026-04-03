@@ -1,0 +1,18 @@
+<section class="page">
+  <div class="page-header">
+    <h1>Users</h1>
+    <p class="muted">Browse all users from JSONPlaceholder.</p>
+  </div>
+
+  <div *ngIf="isLoading()" class="loading">Loading users...</div>
+  <div *ngIf="error()" class="error">{{ error() }}</div>
+
+  <ul *ngIf="!isLoading() && !error()" class="user-list">
+    <li *ngFor="let user of users()" class="user-item">
+      <a class="user-link" [routerLink]="['/users', user.id]">
+        <span class="user-id">#{{ user.id }}</span>
+        <span class="user-title">{{ user.name }}</span>
+      </a>
+    </li>
+  </ul>
+</section>

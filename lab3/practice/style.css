@@ -1,0 +1,49 @@
+:root {
+    --main-color: black;
+}
+
+.counter {
+    color: var(--main-color);
+}
+
+header {
+    text-align: center;
+}
+
+main p {
+    font-size: 48px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+button {
+    margin: 6px 12px;
+    padding: 6px 12px;
+}
+.plus, .minus, .reset {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.plus {
+    background-color: #c8ffc8;
+}
+.minus {
+    background-color: #ffa6a6;
+}
+.reset {
+    background-color: #ffffbe;
+}

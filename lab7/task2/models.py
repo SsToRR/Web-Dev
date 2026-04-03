@@ -56,7 +56,7 @@ class Drink(Product):
                  product_id: int, 
                  name: str, 
                  price: float,
-                 amount: int, 
+                 amount: int,
                  volume_ml: int, 
                  is_cold: bool):
         super().__init__(product_id, name, price, amount)

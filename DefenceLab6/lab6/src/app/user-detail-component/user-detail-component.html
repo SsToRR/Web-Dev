@@ -1,0 +1,15 @@
+<section class="page">
+  <div *ngIf="isLoading()" class="loading">Loading user...</div>
+  <div *ngIf="error()" class="error">{{ error() }}</div>
+
+  <div *ngIf="!isLoading() && user()" class="detail-card">
+    <header>
+      <h1>User #{{ user()!.id }}</h1>
+      <p class="muted">User ID: {{ user()!.id }}</p>
+      <p class="user-name">Name: {{ user()!.name }}</p>
+      <p class="user-username">Username: {{ user()!.username }}</p>
+      <p class="user-email">Email: {{ user()!.email }}</p>
+      <p class="user-phone">Phone: {{ user()!.phone }}</p>
+    </header>
+  </div>
+</section>

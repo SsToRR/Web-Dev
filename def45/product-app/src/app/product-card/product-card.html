@@ -1,0 +1,20 @@
+<main class="main">
+<div class="product-grid">
+    @for(prod of product; track prod.id){
+        <div class="product-card">
+            <h3>{{prod.name}}</h3>
+            <p> Price: {{prod.price}} KZT</p>
+            <p> Likes: {{prod.likes}} </p>
+            <div class="buttons">
+                <button (click)="prod.inStock = !prod.inStock">
+                    {{prod.inStock ? 'In Stock' : 'Out of Stock'}}
+                </button>
+                <button (click)="prod.likes = prod.likes + 1">
+                    Like
+                </button>
+            </div>
+        </div>
+    }
+</div>
+
+</main>
